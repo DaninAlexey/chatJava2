@@ -9,5 +9,9 @@
         <module name="NetworkChatClient" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="NetworkChatClient2" target="16" />
+      <module name="test" target="16" />
+    </bytecodeTargetLevel>
   </component>
 </project>

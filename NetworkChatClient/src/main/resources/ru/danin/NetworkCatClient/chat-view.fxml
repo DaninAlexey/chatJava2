@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.danin.NetworkCatClient.ChatController">
+    <top>
+        <Label text="Онлайн чат GeekBrains" textFill="#bf2cbd" BorderPane.alignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+            <padding>
+                <Insets bottom="5.0" top="5.0" />
+            </padding>
+        </Label>
+    </top>
+    <center>
+        <TextArea fx:id="textArea" editable="false" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font></TextArea>
+    </center>
+    <bottom>
+        <HBox prefHeight="30.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="textField" onAction="#sendMessage" HBox.hgrow="ALWAYS">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="sendButton" minWidth="100.0" mnemonicParsing="false" onAction="#sendMessage" text="Отправить">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </bottom>
+    <left>
+        <ListView fx:id="userList" minHeight="150.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+    </left>
+</BorderPane>
