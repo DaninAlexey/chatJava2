@@ -5,7 +5,16 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/NetworkChatClient/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/NetworkChatClient/pom.xml" />
+        <option value="$PROJECT_DIR$/NetworkChatClient2/pom.xml" />
+        <option value="$PROJECT_DIR$/test/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="16" project-jdk-type="JavaSDK">
